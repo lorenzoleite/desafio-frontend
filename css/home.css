@@ -1,0 +1,49 @@
+main section .container .home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main section .container .home-container .suggestions {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+main section .container .home-container .current-time {
+  font-size: 3.2rem;
+  font-weight: 700;
+
+  margin-bottom: 2rem;
+}
+
+main section .container .home-container .illustration {
+  width: 32rem;
+  height: auto;
+
+  margin-bottom: 2rem;
+}
+
+main section .container .home-container .bar {
+  width: 100%;
+  padding: .5rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+
+  background: var(--input-background);
+}
+
+main section .container .home-container .btn {
+  margin-bottom: 1.5rem;
+}
+
+main section .btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+main section .btn-container .remove-btn {
+  background: var(--red-details);
+}

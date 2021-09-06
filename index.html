@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste GeoInova</title>
+
+  <!--FAVICONS-->
+  <link href="./assets/favicon16x16.png" rel="icon" type="image/png" sizes="16x16">
+  <link href="./assets/favicon16x16.png" rel="icon" type="image/png" sizes="32x32">
+  
+  <!--GOOGLE FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  
+  <!--IMPORTS-->
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/container.css">
+</head>
+<body>
+  <header>
+    <a href="./index.html"><img class="logo" src="./assets/white-logo.png" alt="Logo GeoInova"></a>
+  </header>
+
+  <main id="main">
+    <section>
+      <div class="container">
+        <div id="msgError"></div>
+        <div id="msgSucess"></div>
+        
+        <form id="form" novalidate>         
+          <div class="form-question">
+            <label class="question-title" for="first_name">Qual o seu nome?</label>
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder="Digite seu nome..."
+              autofocus
+              required
+            >
+          </div>
+          
+          <div class="form-question">
+            <label class="question-title" for="birth">Qual sua data de nascimento?</label>
+            <input
+              type="date"
+              name="birth"
+              id="birth"
+              required
+            >
+          </div>
+          
+          <div class="form-question">
+            <label class="question-title" for="email">Qual seu e-mail?</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail..."
+              required
+            >
+          </div>
+          
+          <div class="form-question disabled">
+            <label class="question-title" for="gender">Qual seu sexo?</label>
+            <select name="gender" id="gender" required>
+              <option value="" selected disabled>Selecione</option>
+              <option value="male">Masculino</option>
+              <option value="female">Feminino</option>
+              <option value="others">Outros</option>
+            </select>
+          </div>
+
+          <div class="more-question">
+            <div class="more-button" onclick="more()">&#43</div>
+            <span>Mais opções</span>
+          </div>
+        </form>
+        
+        <button class="btn" type="submit" onclick="register()">Cadastrar</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
